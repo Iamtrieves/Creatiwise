@@ -38,7 +38,7 @@ const HamburgerMenu: FC<HamburgerMenuProps> = ({ isOpen, onToggle }) => {
           isOpen ? "translate-x-0" : "-translate-x-full"
         }`}
       >
-        <nav className="flex flex-col h-[100vh] items-center justify-between mt-10">
+        <nav className="flex flex-col h-[100dvh] items-center justify-between mt-10">
           <div className="items-center flex flex-col text-[1.2rem] gap-6">
             <div className="cursor-pointer" onClick={onToggle}>
               Home

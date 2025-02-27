@@ -1,8 +1,11 @@
-// import { motion } from "motion/react";
+import MainLayout from "./layout/MainLayout";
+import HomePage from "./pages/HomePage";
 const App = () => {
   return (
-    <div className="text-2xl font-bold italic">
-      This is my first successful commit
+    <div>
+      <MainLayout>
+        <HomePage />
+      </MainLayout>
     </div>
   );
 };

@@ -13,7 +13,7 @@ const Hero = (): React.ReactElement => {
   return (
     <div className="relative hero">
       <section className="flex lg:flex-row md:flex-row flex-col justify-between items-center z-10">
-        <div className="lg:pl-[4rem] md:pl-[4rem] p-[1rem] flex-1 flex flex-col gap-2.5 md:gap-3 lg:gap-5">
+        <div className="lg:pl-[4rem] md:pl-[2rem] p-[1rem] flex-1 flex flex-col gap-2.5 md:gap-3 lg:gap-5">
           <motion.div
             className="text-transparent bg-clip-text bg-gradient-to-r from-[#1E1E1E] to-[#6C7075] font-semibold text-[1.5rem]  lg:text-[3.5625rem] md:text-[2.5rem]"
             initial={{ opacity: 0, y: 20 }}

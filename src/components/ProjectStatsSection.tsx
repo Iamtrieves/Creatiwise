@@ -38,7 +38,7 @@ const ProjectStatsSection = (): React.ReactElement => {
               <img className="size-full" src={DefineIcon} alt="Define Icon" />
             </div>
             <div className="lg:w-[80%] flex flex-col lg:gap-[2.9375rem] gap-[0.7rem] w-full">
-              <div className="font-bold lg:text-[2.25rem] text-[1rem] lg:text-start text-center">
+              <div className="font-bold lg:text-[2.25rem] text-[1rem] lg:text-start md:text-start text-center">
                 1. Define
               </div>
               <div className="lg:text-[1.45rem] text-[1rem] text-justify">
@@ -54,7 +54,7 @@ const ProjectStatsSection = (): React.ReactElement => {
               <img className="size-full" src={DesignIcon} alt="Design Icon" />
             </div>
             <div className="lg:w-[80%] flex flex-col lg:gap-[2.9375rem] gap-[0.7rem] w-full">
-              <div className="font-bold lg:text-[2.25rem] text-[1rem] lg:text-start text-center">
+              <div className="font-bold lg:text-[2.25rem] text-[1rem] lg:text-start md:text-start text-center">
                 2. Design
               </div>
               <div className="lg:text-[1.45rem] text-[1rem] text-justify">
@@ -71,7 +71,7 @@ const ProjectStatsSection = (): React.ReactElement => {
               <img className="size-full" src={BuildIcon} alt="Build Icon" />
             </div>
             <div className="lg:w-[80%] flex flex-col lg:gap-[2.9375rem] gap-[0.7rem] w-full">
-              <div className="font-bold lg:text-[2.25rem] text-[1rem] lg:text-start text-center">
+              <div className="font-bold lg:text-[2.25rem] text-[1rem] lg:text-start md:text-start text-center">
                 3. Build
               </div>
               <div className="lg:text-[1.45rem] text-[1rem] text-justify">
@@ -87,7 +87,7 @@ const ProjectStatsSection = (): React.ReactElement => {
               <img className="size-full" src={LaunchIcon} alt="Launch Icon" />
             </div>
             <div className="lg:w-[80%] flex flex-col lg:gap-[2.9375rem] gap-[0.7rem] w-full">
-              <div className="font-bold lg:text-[2.25rem] text-[1rem] lg:text-start text-center">
+              <div className="font-bold lg:text-[2.25rem] text-[1rem] lg:text-start md:text-start text-center">
                 4. Launch
               </div>
               <div className="lg:text-[1.45rem] text-[1rem] text-justify">

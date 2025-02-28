@@ -62,7 +62,7 @@ const HamburgerMenu: FC<HamburgerMenuProps> = ({ isOpen, onToggle }) => {
               text="Sign In"
             />
             <Button
-              className="text-[#1E1E1E] cursor pointer py-[0.7375rem] px-[1rem]  border-[1.5px] scale border-black rounded-3xl md:text-[0.735rem] lg:text-[1.1rem]"
+              className="text-[#1E1E1E] cursor-pointer py-[0.7375rem] px-[1rem]  border-[1.5px] scale border-black rounded-3xl md:text-[0.735rem] lg:text-[1.1rem]"
               text="Sign Up"
             />
           </div>

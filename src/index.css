@@ -16,3 +16,66 @@
     font-size: 0.9rem;
   }
 }
+@media screen and (min-width: 768px) and (max-width: 1190px) {
+  .frontEndStack {
+    width: 40%;
+    height: 40%;
+    top: 35%;
+    left: 25%;
+  }
+  .uiDesignStack {
+    width: 40%;
+    height: 40%;
+    top: 62%;
+    left: -15%;
+  }
+  .brandingStack {
+    width: 40%;
+    height: 40%;
+    top: 55%;
+    left: 45%;
+  }
+  .heroBottomBackground {
+    top: 75%;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1025px) {
+  .blueBackground {
+    top: -70%;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 905px) {
+  .hero {
+    margin-top: 1.5rem;
+  }
+}
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
+  .hero {
+    margin-top: 2.5rem;
+  }
+}
+@media screen and (max-width: 767px) {
+  .frontEndStack {
+    width: 40%;
+    height: 40%;
+    top: 35%;
+    left: 25%;
+  }
+  .uiDesignStack {
+    width: 40%;
+    height: 40%;
+    top: 70%;
+    left: 2%;
+  }
+  .brandingStack {
+    width: 40%;
+    height: 40%;
+    top: 55%;
+    left: 45%;
+  }
+  .flexChild {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-top: -15%;
+  }
+}

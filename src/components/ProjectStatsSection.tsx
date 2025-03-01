@@ -7,7 +7,7 @@ import LaunchIcon from "../assets/images/launchIcon.svg";
 const ProjectStatsSection = (): React.ReactElement => {
   return (
     <div className="bg-white">
-      <section className="lg:py-[1.4875rem] py-[1rem] text-white lg:text-[1.875rem] text-[1.275rem] flex justify-center items-center bg-gradient-to-r from-[#1E1E1E] to-[#6C7075]">
+      <section className="lg:py-[1.4875rem] py-[1rem] text-white lg:text-[1.875rem] text-center text-[1.275rem] flex justify-center items-center bg-gradient-to-r from-[#1E1E1E] to-[#6C7075]">
         Over 200+ Projects delivered
       </section>
       <section className="lg:pt-[7rem] pt-[4rem] lg:px-[4rem] px-[1.2rem] flex flex-col lg:gap-[2.5rem] gap-[1.5rem]">
@@ -25,7 +25,7 @@ const ProjectStatsSection = (): React.ReactElement => {
           </div>
         </section>
         <section className="flex justify-center flex-col mt-[1.625rem] gap-[1rem] items-center">
-          <div className="font-bold text-[#1E1E1E] lg:text-[3.125rem] text-[2rem]">
+          <div className="font-bold text-center text-[#1E1E1E] lg:text-[3.125rem] text-[2rem]">
             How We Work
           </div>
           <div className="text-center lg:text-[2rem] text-[1rem] text-white lg:p-2 p-[8px] rounded-2xl lg:w-[60%] w-[70%] bg-gradient-to-r from-[#1E1E1E] to-[#6C7075]">

@@ -1,30 +1,49 @@
 import Button from "./Button";
-import { FaLinkedin } from "react-icons/fa";
-import { FaFacebook } from "react-icons/fa";
-import { FaInstagram } from "react-icons/fa";
-
+import LinkedinIcon from "../assets/images/Footer Icons/linkedin-brands-solid.svg";
+import InstagramIcon from "../assets/images/Footer Icons/instagram-brands.svg";
+import FacebookIcon from "../assets/images/Footer Icons/facebook-brands.svg";
 const Footer: React.FC = () => {
   const date = new Date();
   const currentYear = date.getFullYear();
   return (
     <div className="bg-gradient-to-b from-[#484C51] to-[#1E1E1E] text-white py-[3.1875rem] px-[2rem] ">
-      <section className="flex flex-col gap-[2.875rem]">
-        <section className="flex flex-col gap-3">
-          <h1 className="font-medium text-[2rem]">Creatiwise</h1>
-          <p className="font-medium text-base w-[80%]">
+      <section className="flex flex-col md:flex-row lg:flex-row gap-[2.875rem]">
+        <section className="flex flex-col lg:justify-between md:justify-between gap-3">
+          <h1 className="font-medium text-[2rem] lg:text-[4rem] md:text-[4rem]">
+            Creatiwise
+          </h1>
+          <p className="font-medium text-base w-[80%] lg:text-[1.25rem]">
             Crafting brands and building beautiful didgital experience...
           </p>
+          <div className="mt-[1.9375rem] hidden md:flex lg:flex flex-col gap-3">
+            <h1>Follow Us</h1>
+            <div className="flex gap-[1.75rem]">
+              <div className="bg-white size-10 p-[.7rem] rounded-[50%] flex items-center justify-center">
+                <img src={LinkedinIcon} alt="" />
+              </div>
+              <div className="bg-white size-10 p-[.7rem] rounded-[50%] flex items-center justify-center">
+                <img src={FacebookIcon} alt="" />
+              </div>
+              <div className="bg-white size-10 p-[.7rem] rounded-[50%] flex items-center justify-center">
+                <img src={InstagramIcon} alt="" />
+              </div>
+            </div>
+          </div>
         </section>
-        <section className="flex justify-between">
-          <div>
-            <h1 className="font-medium text-[1.25rem]">About</h1>
+        <section className="flex w-full justify-between">
+          <div className="flex flex-col gap-[1rem] lg:text-[1.25rem]">
+            <h1 className="font-medium lg:text-[2.25rem] md:text-[2rem] text-[1.25rem]">
+              About
+            </h1>
             <div>Team</div>
             <div>Services</div>
             <div>Partners</div>
             <div>Privacy Policy</div>
           </div>
-          <div>
-            <h1 className="font-medium text-[1.25rem]">Portfolio</h1>
+          <div className="flex flex-col gap-[1rem] lg:text-[1.25rem]">
+            <h1 className="font-medium text-[1.25rem] lg:text-[2.25rem] md:text-[2rem]">
+              Portfolio
+            </h1>
             <div>Branding</div>
             <div>Illustration</div>
             <div>UI/UX Designs</div>
@@ -46,21 +65,21 @@ const Footer: React.FC = () => {
           </div>
         </section>
       </section>
-      <div className="mt-[1.9375rem] flex flex-col gap-2">
+      <div className="mt-[1.9375rem] flex md:hidden lg:hidden flex-col gap-3">
         <h1>Follow Us</h1>
         <div className="flex gap-[1.75rem]">
-          <div className="bg-white size-10 p-2 rounded-[50%] flex items-center justify-center">
-            <FaLinkedin className="size-full object-contain" />
+          <div className="bg-white size-10 p-[.7rem] rounded-[50%] flex items-center justify-center">
+            <img src={LinkedinIcon} alt="" />
           </div>
-          <div className="bg-white size-10 rounded-[50%] flex items-center justify-center">
-            <FaFacebook />
+          <div className="bg-white size-10 p-[.7rem] rounded-[50%] flex items-center justify-center">
+            <img src={FacebookIcon} alt="" />
           </div>
-          <div className="bg-white size-10 rounded-[50%] flex items-center justify-center">
-            <FaInstagram />
+          <div className="bg-white size-10 p-[.7rem] rounded-[50%] flex items-center justify-center">
+            <img src={InstagramIcon} alt="" />
           </div>
         </div>
       </div>
-      <div>
+      <div className="mt-7">
         Copyright @creatiwise <span>{currentYear}</span> All rights reserved.
       </div>
     </div>

@@ -74,11 +74,11 @@ const PortfolioSection: React.FC = () => {
             </div>
           </div>
         </div>
-        <div className="mx-[3.2rem] lg:flex md:flex hidden justify-end mt-[5.6875rem]">
+        <div className="mx-[3.2rem] lg:mx-[4rem] lg:flex md:flex hidden justify-end mt-[5.6875rem]">
           <div>
             <Button
               text="View All"
-              className="border-black border-[2px] text-black bg-transparent py-2 px-[2.5rem] rounded-2xl text-center font-medium text-[1.5rem]"
+              className="border-black border-[2px] text-black bg-transparent py-2 px-[2.5rem] lg:px-[3rem] rounded-2xl text-center font-medium text-[1.5rem]"
             />
           </div>
         </div>

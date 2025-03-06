@@ -1,4 +1,4 @@
-import Rating from "./rating";
+import Rating from "./Rating";
 import EvaWilliams from "../assets/images/Clients Feedback Images/evaImage.svg";
 import JamesCollins from "../assets/images/Clients Feedback Images/jamesImage.svg";
 import Button from "./Button";

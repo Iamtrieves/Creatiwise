@@ -6,7 +6,7 @@ const ClientsFeedbackSection: React.FC = () => {
   return (
     <div className="bg-white px-[1.2rem] py-[7.3125rem]">
       <section className="flex flex-col gap-4">
-        <h1 className="font-bold text-center text-[1.25rem]">
+        <h1 className="font-bold text-center text-[1.25rem] md:text-[1.5rem]">
           What Our Clients Say
         </h1>
         <section className="flex relative flex-col justify-center items-center mt-[6.625rem]">

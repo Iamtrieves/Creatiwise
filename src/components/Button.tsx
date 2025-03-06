@@ -14,7 +14,7 @@ const Button: React.FC<ButtonProps> = ({
   iconPosition,
 }) => {
   return (
-    <button className={className}>
+    <button className={`${className} cursor-pointer`}>
       {icon && iconPosition === "left" && <span>{icon}</span>}
       {text}
       {icon && iconPosition === "right" && <span>{icon}</span>}

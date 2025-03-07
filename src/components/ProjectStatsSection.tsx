@@ -49,7 +49,7 @@ const ProjectStatsSection = (): React.ReactElement => {
             ref={defineRef}
             initial={{ x: 100, opacity: 0 }}
             animate={isDefineInView ? { x: 0, opacity: 1 } : {}}
-            transition={{ duration: 1 }}
+            transition={{ duration: 2 }}
             className="flex lg:flex-row md:flex-row flex-col w-full gap-[2rem] items-center justify-center"
           >
             <div className="lg:w-[20%] w-[8rem]">
@@ -71,7 +71,7 @@ const ProjectStatsSection = (): React.ReactElement => {
             ref={designRef}
             initial={{ x: -100, opacity: 0 }}
             animate={isDesignInView ? { x: 0, opacity: 1 } : {}}
-            transition={{ duration: 1 }}
+            transition={{ duration: 2 }}
             className="flex lg:flex-row-reverse md:flex-row-reverse flex-col w-full gap-[2rem] items-center justify-center"
           >
             <div className="lg:w-[20%] w-[8rem]">
@@ -94,7 +94,7 @@ const ProjectStatsSection = (): React.ReactElement => {
             ref={buildRef}
             initial={{ x: 100, opacity: 0 }}
             animate={isBuildInView ? { x: 0, opacity: 1 } : {}}
-            transition={{ duration: 1 }}
+            transition={{ duration: 2 }}
             className="flex lg:flex-row md:flex-row flex-col w-full gap-[2rem] items-center justify-center"
           >
             <div className="lg:w-[20%] w-[8rem]">
@@ -116,7 +116,7 @@ const ProjectStatsSection = (): React.ReactElement => {
             ref={launchRef}
             initial={{ x: -100, opacity: 0 }}
             animate={isLaunchInView ? { x: 0, opacity: 1 } : {}}
-            transition={{ duration: 1 }}
+            transition={{ duration: 2 }}
             className="flex lg:flex-row-reverse md:flex-row-reverse flex-col w-full gap-[2rem] items-center justify-center"
           >
             <div className="lg:w-[20%] w-[8rem]">

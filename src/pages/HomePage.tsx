@@ -6,7 +6,7 @@ import ClientsFeedbackSection from "../components/ClientsFeedbackSection";
 
 const HomePage: React.FC = () => {
   return (
-    <div>
+    <div className="">
       <Hero />
       <ProjectStatsSection />
       <ServicesSection />

@@ -6,13 +6,13 @@ const Footer: React.FC = () => {
   const date = new Date();
   const currentYear = date.getFullYear();
   return (
-    <div className="bg-gradient-to-b from-[#484C51] to-[#1E1E1E] text-white py-[3.1875rem] px-[2rem] ">
-      <section className="flex flex-col md:flex-row lg:flex-row gap-[2.875rem]">
+    <div className="bg-gradient-to-b from-[#484C51] to-[#1E1E1E] text-white py-[3.1875rem] px-[2rem] w-full">
+      <section className="flex flex-col md:flex-row lg:flex-row md:gap-[2rem] gap-[2.875rem]">
         <section className="flex flex-col lg:justify-between md:justify-between gap-3">
-          <h1 className="font-medium text-[2rem] lg:text-[4rem] md:text-[4rem]">
+          <h1 className="font-medium text-[2rem] lg:text-[3rem] md:text-[2.5rem]">
             Creatiwise
           </h1>
-          <p className="font-medium text-base w-[80%] lg:text-[1.25rem]">
+          <p className="font-medium text-base lg:text-[1.25rem]">
             Crafting brands and building beautiful didgital experience...
           </p>
           <div className="mt-[1.9375rem] hidden md:flex lg:flex flex-col gap-3">
@@ -30,9 +30,9 @@ const Footer: React.FC = () => {
             </div>
           </div>
         </section>
-        <section className="flex w-full justify-between">
+        <section className="flex w-full lg:justify-around md:gap-2 justify-between">
           <div className="flex flex-col gap-[1rem] lg:text-[1.25rem]">
-            <h1 className="font-medium lg:text-[2.25rem] md:text-[2rem] text-[1.25rem]">
+            <h1 className="font-medium lg:text-[2.25rem] md:text-[1.8rem] text-[1.25rem]">
               About
             </h1>
             <div>Team</div>
@@ -41,7 +41,7 @@ const Footer: React.FC = () => {
             <div>Privacy Policy</div>
           </div>
           <div className="flex flex-col gap-[1rem] lg:text-[1.25rem]">
-            <h1 className="font-medium text-[1.25rem] lg:text-[2.25rem] md:text-[2rem]">
+            <h1 className="font-medium text-[1.25rem] lg:text-[2.25rem] md:text-[1.8rem]">
               Portfolio
             </h1>
             <div>Branding</div>
@@ -79,7 +79,7 @@ const Footer: React.FC = () => {
           </div>
         </div>
       </div>
-      <div className="mt-7">
+      <div className="mt-7 text-center">
         Copyright @creatiwise <span>{currentYear}</span> All rights reserved.
       </div>
     </div>

@@ -3,8 +3,20 @@ import DefineIcon from "../assets/images/defineIcon.svg";
 import DesignIcon from "../assets/images/designIcon.svg";
 import BuildIcon from "../assets/images/buildIcon.svg";
 import LaunchIcon from "../assets/images/launchIcon.svg";
+import { motion, useInView } from "framer-motion";
+import { useRef } from "react";
 
 const ProjectStatsSection = (): React.ReactElement => {
+  const defineRef = useRef<HTMLDivElement | null>(null);
+  const designRef = useRef<HTMLDivElement | null>(null);
+  const buildRef = useRef<HTMLDivElement | null>(null);
+  const launchRef = useRef<HTMLDivElement | null>(null);
+
+  const isDefineInView = useInView(defineRef, { once: true });
+  const isDesignInView = useInView(designRef, { once: true });
+  const isBuildInView = useInView(buildRef, { once: true });
+  const isLaunchInView = useInView(launchRef, { once: true });
+
   return (
     <div className="bg-white">
       <section className="lg:py-[1.4875rem] py-[1rem] text-white lg:text-[1.875rem] text-center text-[1.275rem] flex justify-center items-center bg-gradient-to-r from-[#1E1E1E] to-[#6C7075]">
@@ -33,7 +45,13 @@ const ProjectStatsSection = (): React.ReactElement => {
           </div>
         </section>
         <section className="flex lg:mt-[4rem] md:mt-[4rem] mt-[2rem] flex-col gap-[4rem]">
-          <div className="flex lg:flex-row md:flex-row flex-col w-full gap-[2rem] items-center justify-center">
+          <motion.div
+            ref={defineRef}
+            initial={{ x: 100, opacity: 0 }}
+            animate={isDefineInView ? { x: 0, opacity: 1 } : {}}
+            transition={{ duration: 1 }}
+            className="flex lg:flex-row md:flex-row flex-col w-full gap-[2rem] items-center justify-center"
+          >
             <div className="lg:w-[20%] w-[8rem]">
               <img className="size-full" src={DefineIcon} alt="Define Icon" />
             </div>
@@ -48,8 +66,14 @@ const ProjectStatsSection = (): React.ReactElement => {
                 <span className="text-[#526AE8]">- Creatiwise</span>
               </div>
             </div>
-          </div>
-          <div className="flex lg:flex-row-reverse md:flex-row-reverse flex-col w-full gap-[2rem] items-center justify-center">
+          </motion.div>
+          <motion.div
+            ref={designRef}
+            initial={{ x: -100, opacity: 0 }}
+            animate={isDesignInView ? { x: 0, opacity: 1 } : {}}
+            transition={{ duration: 1 }}
+            className="flex lg:flex-row-reverse md:flex-row-reverse flex-col w-full gap-[2rem] items-center justify-center"
+          >
             <div className="lg:w-[20%] w-[8rem]">
               <img className="size-full" src={DesignIcon} alt="Design Icon" />
             </div>
@@ -65,8 +89,14 @@ const ProjectStatsSection = (): React.ReactElement => {
                 illustration.
               </div>
             </div>
-          </div>
-          <div className="flex lg:flex-row md:flex-row flex-col w-full gap-[2rem] items-center justify-center">
+          </motion.div>
+          <motion.div
+            ref={buildRef}
+            initial={{ x: 100, opacity: 0 }}
+            animate={isBuildInView ? { x: 0, opacity: 1 } : {}}
+            transition={{ duration: 1 }}
+            className="flex lg:flex-row md:flex-row flex-col w-full gap-[2rem] items-center justify-center"
+          >
             <div className="lg:w-[20%] w-[8rem]">
               <img className="size-full" src={BuildIcon} alt="Build Icon" />
             </div>
@@ -81,8 +111,14 @@ const ProjectStatsSection = (): React.ReactElement => {
                 <span className="text-[#526AE8]">- Nelson Mandela</span>
               </div>
             </div>
-          </div>
-          <div className="flex lg:flex-row-reverse md:flex-row-reverse flex-col w-full gap-[2rem] items-center justify-center">
+          </motion.div>
+          <motion.div
+            ref={launchRef}
+            initial={{ x: -100, opacity: 0 }}
+            animate={isLaunchInView ? { x: 0, opacity: 1 } : {}}
+            transition={{ duration: 1 }}
+            className="flex lg:flex-row-reverse md:flex-row-reverse flex-col w-full gap-[2rem] items-center justify-center"
+          >
             <div className="lg:w-[20%] w-[8rem]">
               <img className="size-full" src={LaunchIcon} alt="Launch Icon" />
             </div>
@@ -97,7 +133,7 @@ const ProjectStatsSection = (): React.ReactElement => {
                 <span className="text-[#526AE8]">- Nelson Mandela</span>
               </div>
             </div>
-          </div>
+          </motion.div>
         </section>
       </section>
     </div>

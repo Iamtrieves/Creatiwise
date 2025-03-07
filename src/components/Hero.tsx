@@ -7,26 +7,23 @@ import FrontEndDevIcon from "../assets/images/frontendDev.svg";
 import UIDesignIcon from "../assets/images/uiDesignIcon.svg";
 import BrandingIcon from "../assets/images/brandingIcon.svg";
 import Button from "./Button";
+import { motion, useInView } from "framer-motion";
+import { useRef } from "react";
 
 const Hero = (): React.ReactElement => {
+  const leftRef = useRef<HTMLDivElement | null>(null);
+  const rightRef = useRef<HTMLDivElement | null>(null);
+
+  const isLeftInView = useInView(leftRef, { once: true });
+  const isRightInView = useInView(rightRef, { once: true });
   return (
     <div className="relative hero">
       <section className="flex lg:flex-row md:flex-row flex-col justify-between items-center z-10">
         <div className="lg:pl-[4rem] md:pl-[2rem] p-[1rem] flex-1 flex flex-col gap-2.5 md:gap-3 lg:gap-5">
-          <div
-            className="text-transparent bg-clip-text bg-gradient-to-r from-[#1E1E1E] to-[#6C7075] font-semibold text-[1.5rem]  lg:text-[3.5625rem] md:text-[2.5rem]"
-            // initial={{ opacity: 0, y: 20 }}
-            // animate={{ opacity: 1, y: 0 }}
-            // transition={{ duration: 0.8, delay: 0.2 }}
-          >
+          <div className="text-transparent bg-clip-text bg-gradient-to-r from-[#1E1E1E] to-[#6C7075] font-semibold text-[1.5rem]  lg:text-[3.5625rem] md:text-[2.5rem]">
             Turn Your Big Ideas Into Beautiful Digital Experience
           </div>
-          <div
-            // initial={{ opacity: 0, y: 20 }}
-            // animate={{ opacity: 1, y: 0 }}
-            // transition={{ duration: 0.9, delay: 0.4 }}
-            className="text-[#1E1E1E] lg:text-[1.2rem] text-[1rem]"
-          >
+          <div className="text-[#1E1E1E] lg:text-[1.2rem] text-[1rem]">
             Crafting brands and building beautiful digital experiences to meet
             customer's and user's need.
           </div>

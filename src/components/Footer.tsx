@@ -79,7 +79,7 @@ const Footer: React.FC = () => {
           </div>
         </div>
       </div>
-      <div className="mt-7 text-center">
+      <div className="lg:mt-[7.6875rem] md:mt-[5rem] mt-7 text-center">
         Copyright @creatiwise <span>{currentYear}</span> All rights reserved.
       </div>
     </div>

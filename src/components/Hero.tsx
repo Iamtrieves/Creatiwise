@@ -7,15 +7,8 @@ import FrontEndDevIcon from "../assets/images/frontendDev.svg";
 import UIDesignIcon from "../assets/images/uiDesignIcon.svg";
 import BrandingIcon from "../assets/images/brandingIcon.svg";
 import Button from "./Button";
-import { motion, useInView } from "framer-motion";
-import { useRef } from "react";
 
 const Hero = (): React.ReactElement => {
-  const leftRef = useRef<HTMLDivElement | null>(null);
-  const rightRef = useRef<HTMLDivElement | null>(null);
-
-  const isLeftInView = useInView(leftRef, { once: true });
-  const isRightInView = useInView(rightRef, { once: true });
   return (
     <div className="relative hero">
       <section className="flex lg:flex-row md:flex-row flex-col justify-between items-center z-10">
